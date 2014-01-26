@@ -40,6 +40,7 @@ alias please='sudo'
 # Git utils
 alias gs='git status'
 alias ga='git add' && __git_complete ga _git_add
+alias gap='git add -p' && __git_complete gap _git_add
 alias gb='git branch' && __git_complete gb _git_branch
 alias gt='git tag' && __git_complete gt _git_tag
 alias gi='git commit' && __git_complete gi _git_commit
