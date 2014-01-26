@@ -1,16 +1,22 @@
+# Shortcuts for editor and pager
 alias m=$PAGER
 alias e=$EDITOR
+
+# Shortcut for making dirs recursively
 alias md='mkdir -p'
 
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 alias ~='cd ~'
 alias -- -='cd -'
 
+# Open as many windows as many files passed
 alias vim='vim -o'
-alias cssc='csscomb -c ~/configs/.csscomb.json '
+
+# Shortcut to open Finder in current folder
 alias f='open -a Finder'
 
 if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
@@ -40,12 +46,18 @@ alias gi='git commit' && __git_complete gi _git_commit
 alias gm='git merge --no-ff' && __git_complete gm _git_merge
 
 alias gd='git diff'
+# Git diff parent
 alias gdp='git diff HEAD^'
-alias gds='git diff --staged'
 
+# Staged changes
+alias gds='git diff --staged'
+alias gdc='git diff --cached'
+
+# Checkout shortcuts
 alias go='git checkout' && __git_complete go _git_checkout
-alias god='git checkout dev'
-alias gom='git checkout master'
+alias god='go dev'
+alias gom='go master'
+alias gor='go release'
 
 alias gl='git lol'
 alias gh='git hist'
@@ -55,12 +67,20 @@ alias gr='git remote -v'
 alias gf='git fetch'
 alias gfp='git fetch --prune'
 alias grh='git reset --hard'
+
+# Reset current branch to its origin state
 alias grho='git reset --hard origin/`gbc`'
+
+# Pull changes without merge
 alias gpf='git pull --ff-only'
+
+# Pull changes and rebase local commits
 alias gpr='git pull --rebase'
 
-alias gpc='git push -u origin `gbc`' # git-push-current
-alias gpcf='git push -u origin +`gbc`' # git-push-current-force
+# Push current branch and setup upstream
+alias gpc='git push -u origin `gbc`'
+# Force push current branch
+alias gpcf='git push -u origin +`gbc`'
 
 # Rebase & Cherry-picking
 alias grc='git rebase --continue'
@@ -68,18 +88,22 @@ alias gra='git rebase --abort'
 alias gcp='git cherry-pick ' && __git_complete gcp _git_cherry_pick
 alias gcpa='git cherry-pick --abort'
 
-alias gud='god && gpf' # git-update-dev
+# Go to dev and update it (git update dev)
+alias gud='god && gpf'
+
+# Rebase on dev branch
 alias grd='git rebase dev'
 
 alias gsh='git show ' && __git_complete gsh _git_show
 alias ghs='git hash'
 alias gbc='git rev-parse --abbrev-ref HEAD' # git-branch-current
 alias gsd='git show -s --format="%ci"' # git-show-date
-# show merge-base from dev
+
+# Show merge-base from dev
 alias grf='git merge-base dev `gbc`' # WAT?
 
-# Execute on branch
-# updates dev and then rebases current branch
+# Execute on feature branch.
+# Updates dev and then rebases current branch
 alias gudc='god && gpf && go - && grd'
 
 # defunkt hub alias
