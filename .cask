@@ -1,22 +1,63 @@
-# Install native apps
+################
+# brew cask allows installing native apps
+################
+
+# Feed cask formulas
 brew tap phinze/homebrew-cask
+
+# Install cask
 brew install brew-cask
 
-# core stuff
-brew cask install iterm2
-brew cask install xquartz
-#brew cask install ukelele
+
+################
+# Core stuff
+################
+
+brew cask install alfred
 brew cask install google-chrome
+brew cask install xmind
+# TODO: install Ya.Browser
+
+# Pretty window manager
 brew cask install spectacle
+
+# Finder extensions like tabs
 brew cask install xtrafinder
 
-# communications
+# Communications
 brew cask install adium
 brew cask install google-hangouts
 
-# development stuff
+
+################
+# Dev stuff
+################
+
+brew cask install iterm2
+
+# Work with images
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install seashore
+
+# Editors
 brew cask install sublime-text
 ln -fs ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
 brew cask install intellij-ultimate
+
+brew cask install virtualbox
+brew cask install vagrant
+
+
+################
+# Optional stuff
+################
+
+# For editing mac keyboard layouts
+# brew cask install ukelele
+
+# Why do I need this one?
+# brew cask install xquartz
+
+# Fun time!
+# brew cask install steam
