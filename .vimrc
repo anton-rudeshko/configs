@@ -58,7 +58,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 set pastetoggle=<leader>v
 
-"Solarized
+" Solarized
 set t_Co=16
 if has("gui_running")
     set t_Co=256
@@ -66,4 +66,3 @@ if has("gui_running")
 endif
 
 set background=dark
-"colorscheme solarized
