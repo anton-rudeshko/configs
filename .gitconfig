@@ -5,7 +5,6 @@
     mergeoptions = --no-ff
     pager = less -r
 [alias]
-    vlog = log --pretty='%h (%an) %s' --graph
     st = status
     co = checkout
     cp = cherry-pick
@@ -25,4 +24,4 @@
 [push]
     default = simple
 [rebase]
-	autosquash = true
+    autosquash = true
