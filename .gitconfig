@@ -25,3 +25,10 @@
     default = simple
 [rebase]
     autosquash = true
+
+[url "git@github.com:"]
+    pushInsteadOf = "gh:"
+    pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+     insteadOf = "gh:"
