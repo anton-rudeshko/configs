@@ -11,7 +11,6 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias ~='cd ~'
-alias -- -='cd -'
 
 # Open as many windows as many files passed
 alias vim='vim -o'
@@ -83,9 +82,12 @@ alias gpc='git push -u origin `gbc`'
 # Force push current branch
 alias gpcf='git push -u origin +`gbc`'
 
-# Rebase & Cherry-picking
+# Rebase
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
+alias grs='git rebase --skip'
+
+# Cherry-picking
 alias gcp='git cherry-pick ' && __git_complete gcp _git_cherry_pick
 alias gcpa='git cherry-pick --abort'
 
