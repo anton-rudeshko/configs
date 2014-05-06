@@ -6,5 +6,5 @@ function svg2dataURI {
 }
 
 function escape-svg {
-    echo "console.log(escape('`cat $1`'))" | node
+    echo "console.log('data:image/svg+xml,' + escape('`cat $1`'))" | node
 }
