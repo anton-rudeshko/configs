@@ -4,7 +4,12 @@
 [core]
     mergeoptions = --no-ff
     pager = less -r
+    editor = subl -n -w
+    autocrlf = input
+[help]
+    autocorrect = 1
 [alias]
+    # Shortcuts
     st = status
     co = checkout
     cp = cherry-pick
@@ -12,9 +17,20 @@
     up = pull
     di = diff
     br = branch
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
+    # Pretty log for current branch
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    # Pretty log for all branches
     hist = log --pretty=format:'%C(yellow)%h%C(reset) %ad | %C(75)%s%C(reset) %C(yellow)%d%C(reset) [%an]' --graph --date=short --branches --all
+    # Get hash of latest commit
     hash = show -s --format=%H
+
+    # Remove branches that have already been merged with master
+    dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
 [color]
     ui = true
     branch = auto
