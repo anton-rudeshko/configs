@@ -11,6 +11,7 @@ brew install coreutils
 
 # Install Bash 4
 brew install bash
+brew install bash-completion
 
 # Install everything else
 brew install ack
