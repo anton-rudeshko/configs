@@ -25,10 +25,14 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 else
-    alias ls='ls -G --color'
-    export LSCOLORS="Exfxcxdxbxegedabagacad"
+    export LSCOLORS="exfxcxdxbxegedabagacad"
 fi
 
+# LS flags:
+# h - human readable sizes
+# F - show trailing `/` for dirs, `*` for executables and so on
+# G - enable colorized output
+# A - show hidden files (except . and ..)
 alias ls='ls -hFGA'
 alias ll='ls -l'
 alias la='ls -l'
@@ -65,7 +69,9 @@ alias gh='git hist'
 # Git remotes
 alias gr='git remote -v'
 alias gf='git fetch'
+alias gfu='git fetch upstream'
 alias gfp='git fetch --prune'
+alias gfpu='git fetch --prune upstream'
 alias grh='git reset --hard'
 
 # Reset current branch to its origin state
@@ -73,9 +79,11 @@ alias grho='git reset --hard origin/`gbc`'
 
 # Pull changes without merge
 alias gpf='git pull --ff-only'
+alias gpfu='git pull --ff-only upstream'
 
 # Pull changes and rebase local commits
 alias gpr='git pull --rebase'
+alias gpru='git pull --rebase upstream'
 
 # Push current branch and setup upstream
 alias gpc='git push -u origin `gbc`'
@@ -94,8 +102,9 @@ alias gcpa='git cherry-pick --abort'
 # Go to dev and update it (git update dev)
 alias gud='god && gpf'
 
-# Rebase on dev branch
+# Rebase on dev (or master) branch
 alias grd='git rebase dev'
+alias grm='git rebase master'
 
 alias gsh='git show ' && __git_complete gsh _git_show
 alias ghs='git hash'
@@ -104,10 +113,13 @@ alias gsd='git show -s --format="%ci"' # git-show-date
 
 # Show merge-base from dev
 alias grf='git merge-base dev `gbc`' # WAT?
+# git branch set upstream to origin/<current-branch-name>
+alias gbsu='git branch -u origin/`gbc`'
 
 # Execute on feature branch.
-# Updates dev and then rebases current branch
+# Updates dev (or master) and then rebases current branch
 alias gudc='god && gpf && go - && grd'
+alias gumc='gom && gpf && go - && grm'
 
 # defunkt hub alias
 if [[ `which hub` != '' ]]; then
