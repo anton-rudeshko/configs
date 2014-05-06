@@ -1,5 +1,4 @@
-# macports?
-export PATH="$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # npm shortcut
 export PATH="./node_modules/.bin:$PATH"
