@@ -32,11 +32,22 @@
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 [color]
-    ui = true
-    branch = auto
-    diff = auto
+    ui = auto
     interactive = auto
-    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
 [push]
     default = simple
 [rebase]
