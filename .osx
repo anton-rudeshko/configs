@@ -316,6 +316,8 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
+defaults write com.googlecode.iterm2 NSUserKeyEquivalents -dict-add "Open Autocomplete..." "^Space"
+
 ###############################################################################
 # Terminal                                                                    #
 ###############################################################################
