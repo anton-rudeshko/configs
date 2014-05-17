@@ -1,0 +1,68 @@
+################
+# brew cask allows installing native apps
+# Usage: `brew bundle Caskfile`
+################
+
+# Install cask
+install caskroom/cask/brew-cask
+
+# Feed cask formulas
+tap caskroom/versions
+
+
+################
+# Core stuff
+################
+
+cask install alfred
+cask install google-chrome
+
+# Pretty window manager
+cask install spectacle
+
+# Finder extensions such as tabs
+cask install xtrafinder
+
+# Communications
+cask install adium
+cask install google-hangouts
+
+
+################
+# Dev stuff
+################
+
+cask install iterm2
+
+# Work with images
+# cask install imagealpha
+# cask install imageoptim
+# cask install seashore
+
+# Editors
+# cask install sublime-text
+# ln -fs ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+# cask install intellij-ultimate
+
+# cask install virtualbox
+# cask install vagrant
+
+
+################
+# Optional stuff
+################
+
+# Free mind map software
+# cask install xmind
+
+# Automatically adjust screen color temperature
+# cask install flux
+
+# For editing mac keyboard layouts
+# cask install ukelele
+
+# Why do I need this one?
+# cask install xquartz
+
+# Fun time!
+# cask install steam

@@ -1,24 +1,26 @@
-#!/bin/bash
+# Install command-line tools using Homebrew
+# Usage: `brew bundle Brewfile`
 
 # Make sure we’re using the latest Homebrew
-brew update
+update
 
 # Upgrade any already-installed formulae
-brew upgrade
+upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
+install coreutils
 
 # Install Bash 4
-brew install bash
-brew install bash-completion
+install bash
+install bash-completion
 
 # Install everything else
-brew install ack
-brew install tree
-brew install git
-brew install hub
-brew install imagemagick
+install ack
+install tree
+install git
+install nvm
+install hub
+install imagemagick
 
 # Remove outdated versions from the cellar
-brew cleanup
+cleanup
