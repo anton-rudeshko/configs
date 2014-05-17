@@ -1,4 +1,9 @@
+export PATH="~/bin:/usr/local/bin:./node_modules/.bin:$PATH"
+
+export NVM_DIR=~/.nvm
+
 export LANG=en_US.UTF-8
 export BLOCKSIZE=K
 export EDITOR=vim
 export PAGER=less
+export LESS=-asrRix4
