@@ -1,12 +1,25 @@
 echo "==> Loading .profile"
 
-[ -n "`which brew`" ] && source $(brew --prefix nvm)/nvm.sh
+export PATH="~/bin:/usr/local/bin:./node_modules/.bin:$PATH"
 
-# git prompt & completion
-source ~/configs/git-prompt.sh
-source ~/configs/git-completion.bash
+export NVM_DIR=~/.nvm
 
-for file in ~/configs/.{bash_prompt,exports,aliases,functions}; do
+export LANG=en_US.UTF-8
+export BLOCKSIZE=K
+export EDITOR=vim
+export PAGER=less
+export LESS=-asrRix4
+
+# bash completion
+if [ -n "`which brew`" ]; then
+    source $(brew --prefix nvm)/nvm.sh
+    [ -f $(brew --prefix)/etc/bash_completion ] && source $(brew --prefix)/etc/bash_completion
+else
+    source ~/configs/git-prompt.sh
+    source ~/configs/git-completion.bash
+fi
+
+for file in ~/configs/.{bash_prompt,aliases,functions}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
