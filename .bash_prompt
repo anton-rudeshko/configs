@@ -1,5 +1,7 @@
 # git-enabled prompt
-function prompt {
+function __prompt_command {
+  local EXIT="$?"
+
   local RESET="\[\033[00m\]"
   local BLACK="\[\033[0;30m\]"
   local BLACKBOLD="\[\033[1;30m\]"
@@ -24,14 +26,21 @@ function prompt {
     IDENTITY="$GREEN\u$WHITE at $RED\h $WHITE(ssh)"
   fi
 
+  local STATUS_COLOR=""
+  if [ $EXIT = 0 ]; then
+    STATUS_COLOR="$GREEN"
+  else
+    STATUS_COLOR="$RED"
+  fi
+
   # \u = username
   # \h = host
   # \t = time
-  export PS1="\n$CYAN[\t] $IDENTITY$RESET:$BLUE\w$PURPLE\$(__git_ps1) $RESET\n\\$ "
+  export PS1="\n$CYAN[\t] $IDENTITY$RESET:$BLUE\w$PURPLE\$(__git_ps1)\n$STATUS_COLOR\\$ $RESET"
 }
+
+export PROMPT_COMMAND=__prompt_command
 
 # Change cursor to blinking bar
 # http://superuser.com/questions/607478/how-do-you-change-the-xterm-cursor-to-an-i-beam-or-vertical-bar
 echo -e -n "\x1b[\x35 q"
-
-prompt
