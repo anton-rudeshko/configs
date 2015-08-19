@@ -48,6 +48,7 @@ alias gb='git branch' && __git_complete gb _git_branch
 alias gt='git tag' && __git_complete gt _git_tag
 alias gi='git commit' && __git_complete gi _git_commit
 alias gm='git merge --no-ff' && __git_complete gm _git_merge
+alias gmf='git merge --ff-only' && __git_complete gmf _git_merge
 
 alias gd='git diff'
 # Git diff parent
