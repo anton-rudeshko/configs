@@ -104,7 +104,9 @@ alias gud='god && gpf'
 
 # Rebase on dev (or master) branch
 alias grd='git rebase dev'
+alias grid='git rebase -i dev'
 alias grm='git rebase master'
+alias grim='git rebase -i master'
 
 alias gsh='git show ' && __git_complete gsh _git_show
 alias ghs='git hash'
