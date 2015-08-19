@@ -133,10 +133,10 @@ fi
 alias npmi="npm install"
 alias npmis="npm --save install"
 alias npmisd="npm --save-dev install"
-alias npmig="sudo npm install -g"
+alias npmig="npm install -g"
 alias npmu="npm update"
 alias npmr="npm uninstall"
-alias npmrg="sudo npm uninstall -g"
+alias npmrg="npm uninstall -g"
 
 # make alias
 if [[ `which gmake` != '' ]]; then
