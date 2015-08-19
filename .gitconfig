@@ -38,6 +38,7 @@
 
     # Remove branches that have already been merged with master
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+    size = "!git bundle create tmp.bundle --all && du -sh tmp.bundle && rm tmp.bundle"
 
 [color]
     ui = auto
