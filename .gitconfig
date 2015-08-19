@@ -25,7 +25,7 @@
 
     save = !git add -A && git commit -m "SAVEPOINT"
     wip = !git add -u && git commit -m "WIP"
-    undo = reset HEAD~1 --mixed
+    undo = reset HEAD~1 --soft
 
     # Pretty log for current branch
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
