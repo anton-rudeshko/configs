@@ -133,13 +133,15 @@ if [[ `which hub` != '' ]]; then
 fi
 
 # npm
-alias npmi="npm install"
-alias npmis="npm --save install"
-alias npmisd="npm --save-dev install"
-alias npmig="npm install -g"
-alias npmu="npm update"
-alias npmr="npm uninstall"
-alias npmrg="npm uninstall -g"
+alias ni='npm install'
+alias nis='npm install --save'
+alias nid='npm install --save-dev'
+alias nig='npm install --global'
+alias nt='npm test'
+alias nit='npm install && npm test'
+alias nk='npm link'
+alias nr='npm run'
+alias nf='npm cache clean && rm -rf node_modules && npm install'
 
 # make alias
 if [[ `which gmake` != '' ]]; then
