@@ -1,13 +1,16 @@
 [user]
     name = Anton Rudeshko
     email = anton@rudeshko.com
+
 [core]
     mergeoptions = --no-ff
     pager = less -r
     editor = subl -n -w
     autocrlf = input
+
 [help]
     autocorrect = 1
+
 [alias]
     # Shortcuts
     st = status -sb
@@ -61,10 +64,18 @@
     default = simple
 [rebase]
     autosquash = true
+    autostash = true
 
-[url "git@github.com:"]
-    pushInsteadOf = "gh:"
-    pushInsteadOf = "git://github.com/"
-
-[url "git://github.com/"]
-     insteadOf = "gh:"
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[lfs]
+    batch = true
+    concurrenttransfers = 15
+[stash]
+    showPatch = true
+[filter "media"]
+    clean = git media clean %f
+    smudge = git media smudge %f
+    required = true
