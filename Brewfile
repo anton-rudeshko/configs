@@ -20,7 +20,6 @@ install tree
 install git
 install nvm
 install hub
-install imagemagick
 
 # Remove outdated versions from the cellar
 cleanup
