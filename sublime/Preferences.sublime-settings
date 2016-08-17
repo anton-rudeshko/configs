@@ -2,14 +2,14 @@
     // theme
     "theme": "Material-Theme.sublime-theme",
     "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-    // "color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 
     // presentation
     "always_show_minimap_viewport": true,
     "show_tab_close_buttons": false,
     "bold_folder_labels": true,
     "draw_white_space": "all",
-    "font_size": 12,
+    "font_face": "Fira Code",
+    "font_size": 20,
     "rulers": [120],
     "indent_guide_options": ["draw_normal", "draw_active"],
     "line_padding_bottom": 3,
@@ -20,5 +20,6 @@
     "shift_tab_unindent": true,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
     "ignored_packages": ["Markdown", "Vintage"]
 }
