@@ -1,0 +1,14 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"AutoAligner",
+		"Dockerfile Syntax Highlighting",
+		"MarkdownEditing",
+		"Material Theme"
+	]
+}

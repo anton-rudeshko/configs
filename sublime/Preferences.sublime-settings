@@ -1,25 +1,31 @@
 {
-    // theme
-    "theme": "Material-Theme.sublime-theme",
-    "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-
-    // presentation
-    "always_show_minimap_viewport": true,
-    "show_tab_close_buttons": false,
-    "bold_folder_labels": true,
-    "draw_white_space": "all",
-    "font_face": "Fira Code",
-    "font_size": 20,
-    "rulers": [120],
-    "indent_guide_options": ["draw_normal", "draw_active"],
-    "line_padding_bottom": 3,
-    "line_padding_top": 3,
-    "overlay_scroll_bars": "enabled",
-
-    // behavior
-    "shift_tab_unindent": true,
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "ensure_newline_at_eof_on_save": true,
-    "ignored_packages": ["Markdown", "Vintage"]
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Fira Code",
+	"font_size": 20,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		120
+	],
+	"shift_tab_unindent": true,
+	"show_tab_close_buttons": false,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
