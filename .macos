@@ -380,6 +380,9 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 # Install Sublime Text settings
 ln -sf `pwd`/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
 
+# Create an alias for sublime
+ln -sf /Applications/Sublime\ Text*.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
