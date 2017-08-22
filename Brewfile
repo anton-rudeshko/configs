@@ -1,25 +1,38 @@
-# Install command-line tools using Homebrew
-# Usage: `brew bundle Brewfile`
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/dupes"
 
-# Make sure we’re using the latest Homebrew
-update
+brew "bash"
+brew "bash-completion"
+brew "coreutils"
 
-# Upgrade any already-installed formulae
-upgrade
+brew "curl"
+brew "wget"
 
-# Install GNU core utilities (those that come with OS X are outdated)
-install coreutils
+brew "ack"
+brew "jq"
+brew "tree"
 
-# Install Bash 4
-install bash
-install bash-completion
+brew "htop"
+brew "ncdu"
+brew "rsync"
+brew "tmux"
+brew "p7zip"
 
-# Install everything else
-install ack
-install tree
-install git
-install nvm
-install hub
+brew "subversion"
+brew "git"
+brew "git-lfs"
+brew "hub"
 
-# Remove outdated versions from the cellar
-cleanup
+brew "nvm"
+
+brew "dpkg"
+
+brew "python"
+brew "python3"
+brew "pip-completion"
+brew "ansible"
+
+brew "lastpass-cli", args: ["with-pinentry"]
+
