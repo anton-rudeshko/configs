@@ -47,6 +47,7 @@ alias gap='git add -p' && __git_complete gap _git_add
 alias gb='git branch' && __git_complete gb _git_branch
 alias gt='git tag' && __git_complete gt _git_tag
 alias gi='git commit' && __git_complete gi _git_commit
+alias gam='git commit --amend'
 alias gm='git merge --no-ff' && __git_complete gm _git_merge
 alias gmf='git merge --ff-only' && __git_complete gmf _git_merge
 
@@ -123,6 +124,13 @@ alias gbsu='git branch -u origin/`gbc`'
 # Updates dev (or master) and then rebases current branch
 alias gudc='god && gpf && go - && grd'
 alias gumc='gom && gpf && go - && grm'
+
+# git-svn aliases
+alias gog='go git-svn'
+alias gsr='git svn rebase'
+alias gsrb='git rebase git-svn'
+alias gugc='gog && gsr && go - && gsrb'
+alias gsc='git svn dcommit'
 
 # defunkt hub alias
 if [[ `which hub` != '' ]]; then
