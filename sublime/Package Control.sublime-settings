@@ -7,8 +7,10 @@
 	[
 		"Alignment",
 		"AutoAligner",
+		"BBCode Syntax",
 		"Dockerfile Syntax Highlighting",
 		"JSX",
+		"Markdown Preview",
 		"MarkdownEditing",
 		"Material Theme",
 		"Package Control"
