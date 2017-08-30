@@ -1,0 +1,18 @@
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+    gitfast
+    github
+    colored-man-pages
+    fasd
+    sudo
+
+    zsh-users/zsh-completions
+    zsh-users/zsh-syntax-highlighting
+    zsh-users/zsh-autosuggestions
+    lukechilds/zsh-nvm
+EOBUNDLES
+
+antigen theme fino
+
+antigen apply
