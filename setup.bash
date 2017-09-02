@@ -39,11 +39,12 @@ GIT_USER=${GIT_USER:-$CURRENT_GIT_USER}
 GIT_EMAIL=${GIT_EMAIL:-$CURRENT_GIT_EMAIL}
 GH_HOST=${GH_HOST:-$CURRENT_GH_HOST}
 
-cat >~/.extra <<EOL
-echo "==> Loading .extra"
-git config --global user.name "$GIT_USER"
-git config --global user.email "$GIT_EMAIL"
+git config --global user.name "${GIT_USER}"
+git config --global user.email "${GIT_EMAIL}"
 
+git config --global core.excludesfile "${dotfiles_dir}/global.gitignore"
+
+cat >~/.extra <<EOL
 export GITHUB_HOST="${GH_HOST}"
 EOL
 
