@@ -2,7 +2,10 @@
 
 set -e
 
-dotfiles_dir="${HOME}/dotfiles"
+dotfiles_dir=`cd "$(dirname "$0")" && pwd`
+
+echo "Home directory is ${HOME}"
+echo "Dotfiles directory is ${dotfiles_dir}"
 
 if [[ $OSTYPE =~ darwin ]]; then
     echo "macOS detected"
