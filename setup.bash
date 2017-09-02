@@ -12,11 +12,12 @@ if [[ $OSTYPE =~ darwin ]]; then
     if [ -z "`which brew`" ]; then
         echo "Installing Homebrew..."
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-         brew bundle "${dotfiles_dir}/Brewfile"
     else
         echo "Homebrew is already installed"
     fi
+
+    echo "Updating brew bundles..."
+    brew bundle --file="${dotfiles_dir}/Brewfile"
 fi
 
 echo "Symlinking configs..."
