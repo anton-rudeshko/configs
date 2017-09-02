@@ -21,13 +21,13 @@ if [[ $OSTYPE =~ darwin ]]; then
 fi
 
 echo "Symlinking configs..."
-for file in profile gitconfig vimrc inputrc zshrc; do
+for file in profile vimrc inputrc zshrc; do
     ln -sf "${dotfiles_dir}/${file}" "${HOME}/.${file}"
 done
 unset file
 
-CURRENT_GIT_USER=`git config --global --get user.name`
-CURRENT_GIT_EMAIL=`git config --global --get user.email`
+CURRENT_GIT_USER=`git config --global --get user.name || echo`
+CURRENT_GIT_EMAIL=`git config --global --get user.email || echo`
 CURRENT_GH_HOST=${GITHUB_HOST:-github.com}
 
 echo "Configuring git..."
@@ -38,6 +38,8 @@ read -p "Enter your GitHub host ($CURRENT_GH_HOST): " GH_HOST
 GIT_USER=${GIT_USER:-$CURRENT_GIT_USER}
 GIT_EMAIL=${GIT_EMAIL:-$CURRENT_GIT_EMAIL}
 GH_HOST=${GH_HOST:-$CURRENT_GH_HOST}
+
+cp -f "${dotfiles_dir}/gitconfig.template" "${HOME}/.gitconfig"
 
 git config --global user.name "${GIT_USER}"
 git config --global user.email "${GIT_EMAIL}"
