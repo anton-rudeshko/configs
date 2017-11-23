@@ -35,7 +35,7 @@ alias gcpa='git cherry-pick --abort'
 # Go to dev and update it (git update dev)
 alias gud='god && gpf'
 
-alias grdb='git rebase dev'
+alias grbd='git rebase dev'
 alias grbid='git rebase -i dev'
 alias grbim='git rebase -i master'
 
@@ -46,7 +46,7 @@ alias gsd='git show -s --format="%ci"' # git-show-date
 
 # Execute on feature branch.
 # Updates dev (or master) and then rebases current branch
-alias gudc='gcd && gpf && gco - && grd'
+alias gudc='gcd && gpf && gco - && grbd'
 alias gumc='gcm && gpf && gco - && grbm'
 
 # git-svn aliases
