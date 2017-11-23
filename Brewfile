@@ -7,6 +7,7 @@ tap "beeftornado/rmtree"
 brew "zsh"
 brew "antigen"
 brew "fasd"
+brew "fzf"
 
 brew "bash"
 brew "bash-completion"
