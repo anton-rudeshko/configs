@@ -12,8 +12,9 @@ antigen bundles <<EOBUNDLES
     zsh-users/zsh-autosuggestions
     changyuheng/zsh-interactive-cd
     lukechilds/zsh-nvm
-EOBUNDLES
 
-antigen theme fino
+    mafredri/zsh-async
+    sindresorhus/pure
+EOBUNDLES
 
 antigen apply
