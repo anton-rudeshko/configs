@@ -64,3 +64,6 @@ fi
 
 # fasd
 alias e='a -e $EDITOR'
+
+# npm
+alias nit='npm install && npm test'
