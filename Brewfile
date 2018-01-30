@@ -8,6 +8,7 @@ brew "zsh"
 brew "antigen"
 brew "fasd"
 brew "fzf"
+brew "fd"
 
 brew "bash"
 brew "bash-completion"
