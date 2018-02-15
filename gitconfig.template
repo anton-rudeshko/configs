@@ -62,19 +62,11 @@
     autosquash = true
     autostash = true
 
-[filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
 [lfs]
     batch = true
     concurrenttransfers = 15
 [stash]
     showPatch = true
-[filter "media"]
-    clean = git media clean %f
-    smudge = git media smudge %f
-    required = true
 [commit]
     gpgsign = true
 [gpg]
