@@ -57,7 +57,7 @@ alias gugc='gog && gsr && go - && gsrb'
 alias gsc='git svn dcommit'
 
 # defunkt hub alias
-if [[ `which hub` != '' ]]; then
+if type hub &> /dev/null; then
     alias git='hub'
     alias ghbr='git browse'
 fi
