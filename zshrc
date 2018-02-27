@@ -5,6 +5,9 @@ dotfiles_dir="${HOME}/dotfiles"
 export PATH="${HOME}/bin:/usr/local/bin:./node_modules/.bin:$PATH"
 
 export EDITOR=subl
+export PAGER=less
+# F=--quit-if-one-screen R=--RAW-CONTROL-CHARS X=--no-init
+export LESS=FRX
 
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
@@ -34,3 +37,6 @@ _fzf_compgen_dir() {
 
 extra_path="${HOME}/.extra"
 [ -r ${extra_path} ] && [ -f ${extra_path} ] && source ${extra_path}
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
