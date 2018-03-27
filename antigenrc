@@ -5,6 +5,7 @@ antigen bundles <<EOBUNDLES
     github
     colored-man-pages
     fasd
+    wookayin/fzf-fasd
 
     zsh-users/zsh-completions
     zsh-users/zsh-syntax-highlighting
