@@ -6,8 +6,11 @@ export PATH="${HOME}/bin:/usr/local/bin:./node_modules/.bin:$PATH"
 
 export EDITOR=subl
 export PAGER=less
-# F=--quit-if-one-screen R=--RAW-CONTROL-CHARS X=--no-init
-export LESS=FRX
+# i=--ignore-case
+# F=--quit-if-one-screen
+# R=--RAW-CONTROL-CHARS
+# X=--no-init
+export LESS=iFRX
 
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
