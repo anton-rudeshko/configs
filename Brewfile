@@ -2,44 +2,53 @@ tap "caskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/dupes"
-tap "beeftornado/rmtree"
 
 brew "zsh"
 brew "antigen"
-brew "fasd"
-brew "fzf"
-brew "fd"
-
 brew "bash"
 brew "bash-completion"
 brew "coreutils"
 
+brew "fasd"
+brew "fzf"
+brew "fd"
+brew "the_silver_searcher"
+brew "tree"
+
 brew "curl"
 brew "wget"
+brew "rsync"
 
-brew "ack"
+# Data mining & analysis
 brew "jq"
-brew "tree"
+brew "jid"
+brew "datamash"
+brew "saulpw/vd/visidata"
 
 brew "htop"
 brew "ncdu"
-brew "rsync"
 brew "tmux"
 brew "p7zip"
+brew "midnight-commander"
 
 brew "subversion"
 brew "git"
 brew "git-lfs"
+brew "git-sizer"
+brew "tig"
 brew "hub"
-
-brew "dpkg"
+brew "colordiff"
+brew "wdiff"
+brew "diff-so-fancy"
 
 brew "python"
 brew "python3"
 brew "pip-completion"
-brew "ansible"
 
-brew "lastpass-cli", args: ["with-pinentry"]
+# brew "dpkg"
+# brew "ansible"
+
+# brew "lastpass-cli", args: ["with-pinentry"]
 
 ################
 # Core stuff
@@ -56,9 +65,9 @@ brew "lastpass-cli", args: ["with-pinentry"]
 # cask "choosy"
 
 # Finder extensions such as tabs
-cask "xtrafinder"
+# cask "xtrafinder"
 
-cask "telegram-desktop"
+# cask "telegram-desktop"
 
 
 # ################
