@@ -1,6 +1,6 @@
 [core]
     mergeoptions = --no-ff
-    pager = less -r
+    pager = diff-so-fancy | less -$LESS
     editor = subl -n -w
     autocrlf = input
 
