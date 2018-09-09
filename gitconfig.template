@@ -39,6 +39,8 @@
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
     size = "!git gc && git count-objects -vH"
 
+    patch = !git --no-pager diff --binary --no-color
+
 [color]
     ui = auto
     interactive = auto
