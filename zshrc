@@ -10,7 +10,8 @@ export PAGER=less
 # F=--quit-if-one-screen
 # R=--RAW-CONTROL-CHARS
 # X=--no-init
-export LESS=iFRX
+# x=--tabs=4
+export LESS=iFRXx4
 
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
