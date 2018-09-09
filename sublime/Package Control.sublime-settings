@@ -10,12 +10,15 @@
 		"Awk",
 		"BBCode Syntax",
 		"Dockerfile Syntax Highlighting",
+		"Dracula Color Scheme",
 		"Git Commit Message Syntax",
+		"Handlebars",
 		"JSX",
-		"Markdown Preview",
 		"MarkdownEditing",
+		"MarkdownPreview",
 		"Material Theme",
 		"Package Control",
-		"PlainTasks"
+		"PlainTasks",
+		"Pretty JSON"
 	]
 }
