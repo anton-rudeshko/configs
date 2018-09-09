@@ -3,8 +3,9 @@ echo "==> Loading .zshrc"
 dotfiles_dir="${HOME}/dotfiles"
 
 export PATH="${HOME}/bin:/usr/local/bin:./node_modules/.bin:$PATH"
+export ZSH_HIGHLIGHT_MAXLENGTH=300
 
-export EDITOR=subl
+export EDITOR="subl --wait"
 export PAGER=less
 # i=--ignore-case
 # F=--quit-if-one-screen
