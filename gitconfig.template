@@ -63,6 +63,10 @@
 [rebase]
     autosquash = true
     autostash = true
+[diff]
+    colorMoved = default
+[merge]
+    conflictstyle = diff3
 
 [lfs]
     batch = true
