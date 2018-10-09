@@ -22,8 +22,8 @@
     branches = branch -a
     remotes = remote -v
 
-    save = !git add -A && git commit -m "SAVEPOINT"
-    wip = !git add -u && git commit -m "WIP"
+    save = !git add --all && git commit --message "SAVEPOINT"
+    wip = !git add --update && git commit --message "WIP"
     undo = reset HEAD~1 --soft
 
     # Pretty log for current branch
