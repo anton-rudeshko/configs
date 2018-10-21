@@ -7,7 +7,7 @@ if [[ `gpgconf hub` != '' ]]; then
   export GPG_TTY=$(tty)
 fi
 
-export PATH="${HOME}/bin:/usr/local/bin:./node_modules/.bin:$PATH"
+export PATH="${HOME}/bin:./node_modules/.bin:$PATH"
 export ZSH_HIGHLIGHT_MAXLENGTH=300
 
 export EDITOR="subl --wait"
@@ -22,7 +22,7 @@ export LESS=iFRXx4
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
 
-source /usr/local/share/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 antigen init "${dotfiles_dir}/antigenrc"
 
 HYPHEN_INSENSITIVE="true"
