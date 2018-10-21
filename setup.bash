@@ -20,6 +20,18 @@ if [[ $OSTYPE =~ darwin ]]; then
     brew bundle --file="${dotfiles_dir}/Brewfile"
 fi
 
+vundle_dir="${HOME}/.vim/bundle/Vundle.vim"
+if [ ! -d "${vundle_dir}" ]; then
+    read -p "Install vundle? " -n 1 -r
+    echo
+    if [[ ${REPLY} =~ ^[Yy]$ ]]; then
+        echo "Installing Vundle..."
+        mkdir -p "${vundle_dir}"
+        git clone "https://github.com/VundleVim/Vundle.vim.git" "${vundle_dir}"
+    fi
+fi
+unset vundle_dir
+
 echo "Symlinking configs..."
 for file in profile vimrc inputrc zshrc; do
     ln -sf "${dotfiles_dir}/${file}" "${HOME}/.${file}"

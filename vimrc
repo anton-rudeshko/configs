@@ -1,5 +1,18 @@
 " Make vim more useful
 set nocompatible
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'chaoren/vim-wordmotion'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'vimoutliner/vimoutliner'
+
+call vundle#end()
+filetype plugin on
+
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
