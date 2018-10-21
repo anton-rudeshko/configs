@@ -2,6 +2,11 @@ echo "==> Loading .zshrc"
 
 dotfiles_dir="${HOME}/dotfiles"
 
+if [[ `gpgconf hub` != '' ]]; then
+  export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+  export GPG_TTY=$(tty)
+fi
+
 export PATH="${HOME}/bin:/usr/local/bin:./node_modules/.bin:$PATH"
 export ZSH_HIGHLIGHT_MAXLENGTH=300
 
