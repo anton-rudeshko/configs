@@ -21,6 +21,18 @@ if [[ $OSTYPE =~ darwin ]]; then
 
     echo "Updating brew bundles..."
     brew bundle --file="${dotfiles_dir}/Brewfile"
+
+    if [ -z "`which mas`" ]; then
+        cat "${dotfiles_dir}/Masfile"
+        read -p "Install these apps from AppStore? " -n 1 -r
+        echo
+        if [[ ${REPLY} =~ ^[Yy]$ ]]; then
+          brew bundle --file="${dotfiles_dir}/Masfile"
+        fi
+    else
+        echo "Updating brew mas bundle..."
+        brew bundle --file="${dotfiles_dir}/Masfile"
+    fi
 fi
 
 vundle_dir="${HOME}/.vim/bundle/Vundle.vim"
