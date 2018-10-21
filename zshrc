@@ -2,6 +2,9 @@ echo "==> Loading .zshrc"
 
 dotfiles_dir="${HOME}/dotfiles"
 
+extra_path="${HOME}/.extra"
+[ -r ${extra_path} ] && [ -f ${extra_path} ] && source ${extra_path}
+
 if [[ `gpgconf hub` != '' ]]; then
   export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
   export GPG_TTY=$(tty)
@@ -44,9 +47,6 @@ _fzf_compgen_dir() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-extra_path="${HOME}/.extra"
-[ -r ${extra_path} ] && [ -f ${extra_path} ] && source ${extra_path}
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
