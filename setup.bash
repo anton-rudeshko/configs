@@ -8,7 +8,7 @@ extra_file="${HOME}/.extra"
 echo "Home directory is ${HOME}"
 echo "Dotfiles directory is ${dotfiles_dir}"
 
-rm ${extra_file}
+rm -f ${extra_file}
 
 if [[ $OSTYPE =~ darwin ]]; then
     echo "macOS detected"
