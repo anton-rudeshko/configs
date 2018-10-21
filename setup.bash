@@ -3,9 +3,12 @@
 set -e
 
 dotfiles_dir=`cd "$(dirname "$0")" && pwd`
+extra_file="${HOME}/.extra"
 
 echo "Home directory is ${HOME}"
 echo "Dotfiles directory is ${dotfiles_dir}"
+
+rm ${extra_file}
 
 if [[ $OSTYPE =~ darwin ]]; then
     echo "macOS detected"
@@ -58,7 +61,7 @@ git config --global user.email "${GIT_EMAIL}"
 
 git config --global core.excludesfile "${dotfiles_dir}/global.gitignore"
 
-cat >~/.extra <<EOL
+cat >>${extra_file} <<EOL
 export GITHUB_HOST="${GH_HOST}"
 EOL
 
