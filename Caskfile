@@ -1,0 +1,34 @@
+tap "caskroom/fonts"
+
+################
+# Core stuff
+################
+
+# Pretty window manager
+cask "spectacle"
+cask "alfred"
+
+cask "choosy"
+cask "yandex"
+cask "google-chrome"
+
+cask "xmind-zen"
+cask "plex-media-player"
+cask "telegram-desktop"
+cask "veracrypt"
+
+# Editors
+cask "sublime-text"
+cask "dynalist"
+cask "iterm2"
+cask "postman"
+cask "font-fira-code"
+cask "jetbrains-toolbox"
+
+################
+# Optional stuff
+################
+
+# Automatically adjust screen color temperature
+cask "flux"
+cask "ilya-birman-typography-layout"
