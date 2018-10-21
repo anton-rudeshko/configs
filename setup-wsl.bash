@@ -20,10 +20,7 @@ echo " ok"
 linuxbrew_src="https://github.com/Linuxbrew/brew.git"
 linuxbrew_dir="${HOME}/.linuxbrew"
 
-if [ -d "${linuxbrew_dir}/.git" ]; then
-    echo -n "==> Pulling latest linuxbrew changes in ${linuxbrew_dir}..."
-    git --git-dir "${linuxbrew_dir}/.git" pull -q
-else
+if [ ! -d "${linuxbrew_dir}" ]; then
     echo -n "==> Cloning linuxbrew to ${linuxbrew_dir}..."
     git clone -q "${linuxbrew_src}" "${linuxbrew_dir}"
 fi
