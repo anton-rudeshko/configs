@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'chaoren/vim-wordmotion'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vimoutliner/vimoutliner'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 filetype plugin on
