@@ -10,9 +10,16 @@ Plugin 'chaoren/vim-wordmotion'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vimoutliner/vimoutliner'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'vim-scripts/vim-auto-save'
 
 call vundle#end()
 filetype plugin on
+
+" enable AutoSave on Vim startup
+let g:auto_save = 1
+
+" do not save while in insert mode
+let g:auto_save_in_insert_mode = 0
 
 " Enhance command-line completion
 set wildmenu
