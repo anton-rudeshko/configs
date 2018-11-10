@@ -3,6 +3,8 @@
     pager = diff-so-fancy | less -$LESS
     editor = subl -n -w
     autocrlf = input
+[interactive]
+    singleKey = true
 
 [help]
     autocorrect = 1
