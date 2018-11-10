@@ -21,6 +21,13 @@ let g:auto_save = 1
 " do not save while in insert mode
 let g:auto_save_in_insert_mode = 0
 
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+
+set spelllang=ru_yo,en_us
+
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
