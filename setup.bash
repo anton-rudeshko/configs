@@ -8,6 +8,9 @@ extra_file="${HOME}/.extra"
 echo "Home directory is ${HOME}"
 echo "Dotfiles directory is ${dotfiles_dir}"
 
+echo "Pulling for recent updates..."
+git -C "${dotfiles_dir}" pull
+
 rm -f ${extra_file}
 
 if [[ $OSTYPE =~ darwin ]]; then
