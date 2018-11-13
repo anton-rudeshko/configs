@@ -27,13 +27,13 @@ fi
 mkdir -p ${linuxbrew_dir}/{etc,include,lib,sbin,share,Frameworks,opt}
 echo " ok"
 
-export PATH="${linuxbrew_dir}/bin:${PATH}"
+export PATH="${linuxbrew_dir}/sbin:${linuxbrew_dir}/bin:${PATH}"
 
 echo "==> Running brew doctor..."
 brew doctor
 
 cat >>${extra_file} <<EOL
-export PATH="${linuxbrew_dir}/bin:${PATH}"
+export PATH="${linuxbrew_dir}/sbin:${linuxbrew_dir}/bin:\${PATH}"
 
 source ${dotfiles_dir}/wsl-runtime.bash"
 EOL
