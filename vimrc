@@ -30,8 +30,6 @@ set spelllang=ru_yo,en_us
 
 " Enhance command-line completion
 set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
 " Optimize for fast terminal connections (scrolling etc)
 set ttyfast
 " Add the g flag to search/replace by default
