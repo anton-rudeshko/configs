@@ -22,6 +22,9 @@ export PAGER=less
 # x=--tabs=4
 export LESS=iFRXx4
 
+# see https://github.com/sharkdp/bat#output-style
+export BAT_STYLE="changes,header,numbers"
+
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
 
