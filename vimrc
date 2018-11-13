@@ -54,8 +54,12 @@ set list
 set hlsearch
 " Ignore case of searches
 set ignorecase
+" Override the 'ignorecase' option if the search pattern contains upper case characters.
+set smartcase
 " Highlight dynamically as pattern is typed
 set incsearch
+" Do not wrap search around the end of the file
+set nowrapscan
 " Always show status line
 set laststatus=2
 " Enable mouse in all modes
