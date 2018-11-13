@@ -42,6 +42,8 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+" Keep cursor away from top/bottom of screen
+set scrolloff=5
 
 " Make tabs as wide as four spaces
 set tabstop=4
