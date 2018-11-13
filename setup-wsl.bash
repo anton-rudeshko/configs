@@ -35,5 +35,5 @@ brew doctor
 cat >>${extra_file} <<EOL
 export PATH="${linuxbrew_dir}/sbin:${linuxbrew_dir}/bin:\${PATH}"
 
-source ${dotfiles_dir}/wsl-runtime.bash"
+source "${dotfiles_dir}/wsl-runtime.bash"
 EOL
