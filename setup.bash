@@ -50,10 +50,11 @@ if [ ! -d "${vundle_dir}" ]; then
         echo "Installing Vundle..."
         mkdir -p "${vundle_dir}"
         git clone "https://github.com/VundleVim/Vundle.vim.git" "${vundle_dir}"
-        
-        echo "Running Vundle:PluginInstall..."
-        vim -c 'PluginInstall' -c 'qa!'
     fi
+fi
+if [ -d "${vundle_dir}" ]; then
+    echo "Running Vundle:PluginInstall..."
+    vim -c 'PluginInstall' -c 'qa!'
 fi
 unset vundle_dir
 
