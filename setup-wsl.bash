@@ -27,6 +27,8 @@ fi
 mkdir -p ${linuxbrew_dir}/{etc,include,lib,sbin,share,Frameworks,opt}
 echo " ok"
 
+export PATH="${linuxbrew_dir}/bin:${PATH}"
+
 echo "==> Running brew doctor..."
 brew doctor
 
