@@ -11,6 +11,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'vimoutliner/vimoutliner'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 filetype plugin on
