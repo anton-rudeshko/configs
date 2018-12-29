@@ -20,7 +20,8 @@ export PAGER=less
 # R=--RAW-CONTROL-CHARS
 # X=--no-init
 # x=--tabs=4
-export LESS=iFRXx4
+# M=--LONG-PROMPT (shows lines & percentage after all file is read)
+export LESS=iFRXx4M
 
 # see https://github.com/sharkdp/bat#output-style
 export BAT_STYLE="changes,header,numbers"
