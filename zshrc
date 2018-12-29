@@ -45,6 +45,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -100'"
 
+# Default shortcut conflicts with Birman's keyboard layout
+bindkey '^Y' fzf-cd-widget
+
 _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
 }
