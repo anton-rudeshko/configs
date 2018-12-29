@@ -40,7 +40,10 @@ export LC_ALL=en_US.UTF-8
 source "${dotfiles_dir}/aliases.zsh"
 
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_OPTS='--height 75% --multi'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -100'"
 
 _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
