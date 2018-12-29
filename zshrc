@@ -60,4 +60,4 @@ _fzf_compgen_dir() {
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-setopt globdots
+setopt GLOB_DOTS
