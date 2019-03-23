@@ -12,3 +12,5 @@ if [ "$(umask)" = "0000" ]; then
 fi
 
 alias open="explorer.exe"
+
+export BROWSER="explorer.exe"
