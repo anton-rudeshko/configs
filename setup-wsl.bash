@@ -17,23 +17,19 @@ echo -n "==> Installing linuxbrew dependencies ${linuxbrew_deps}..."
 sudo apt-get install -qq ${linuxbrew_deps}
 echo " ok"
 
-linuxbrew_src="https://github.com/Linuxbrew/brew.git"
-linuxbrew_dir="${HOME}/.linuxbrew"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
-if [ ! -d "${linuxbrew_dir}" ]; then
-    echo -n "==> Cloning linuxbrew to ${linuxbrew_dir}..."
-    git clone -q "${linuxbrew_src}" "${linuxbrew_dir}"
-fi
-mkdir -p ${linuxbrew_dir}/{etc,include,lib,sbin,share,Frameworks,opt}
-echo " ok"
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-export PATH="${linuxbrew_dir}/sbin:${linuxbrew_dir}/bin:${PATH}"
+cat >>${extra_file} <<EOL
+eval \$($(brew --prefix)/bin/brew shellenv)
+
+source "${dotfiles_dir}/wsl-runtime.bash"
+EOL
 
 echo "==> Running brew doctor..."
 brew doctor
 
-cat >>${extra_file} <<EOL
-export PATH="${linuxbrew_dir}/sbin:${linuxbrew_dir}/bin:\${PATH}"
-
-source "${dotfiles_dir}/wsl-runtime.bash"
-EOL
+echo "==> Installing gcc..."
+brew install gcc
