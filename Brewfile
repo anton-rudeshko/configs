@@ -8,23 +8,6 @@ tap "saulpw/vd"
 # https://github.com/sharkdp/bat
 brew "bat"
 
-# Rainbows and unicorns in your console!
-# https://github.com/busyloop/lolcat
-brew "lolcat"
-
-
-# List ASCII idiomatic names and octal/decimal code-point forms
-# http://www.catb.org/~esr/ascii/
-brew "ascii"
-
-# Convert text between DOS, UNIX, and Mac formats
-# https://waterlan.home.xs4all.nl/dos2unix.html
-brew "dos2unix"
-
-# View and edit files in hexadecimal or ASCII
-# http://rigaux.org/hexedit.html
-brew "hexedit"
-
 
 # UNIX shell (command interpreter)
 # https://www.zsh.org/
@@ -168,10 +151,6 @@ brew "wdiff"
 # https://github.com/so-fancy/diff-so-fancy
 brew "diff-so-fancy"
 
-
-# Instant coding answers via the command-line
-# https://github.com/gleitz/howdoi
-brew "howdoi"
 
 # Open source programming language to build simple/reliable/efficient software
 # https://golang.org
