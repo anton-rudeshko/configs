@@ -36,8 +36,8 @@ set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
 
-" Enable line numbers
-set number
+" Enable hybrid (absolute + relative) line numbers
+set number relativenumber
 
 " Enable syntax highlighting
 syntax on
