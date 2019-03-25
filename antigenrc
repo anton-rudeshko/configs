@@ -10,7 +10,6 @@ antigen bundles <<EOBUNDLES
     zsh-users/zsh-completions
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-autosuggestions
-    tysonwolker/iterm-tab-colors
     changyuheng/zsh-interactive-cd
     lukechilds/zsh-nvm
 
