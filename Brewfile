@@ -56,10 +56,6 @@ brew "coreutils"
 # https://curl.haxx.se/
 brew "curl"
 
-# Internet file retriever
-# https://www.gnu.org/software/wget/
-brew "wget"
-
 # Utility that provides fast incremental file transfer
 # https://rsync.samba.org/
 brew "rsync"
