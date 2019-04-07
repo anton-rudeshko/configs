@@ -69,3 +69,5 @@ alias m='d -e mc'
 
 # npm
 alias nit='npm install && npm test'
+
+alias -g L='| less'
