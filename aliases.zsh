@@ -71,3 +71,8 @@ alias m='d -e mc'
 alias nit='npm install && npm test'
 
 alias -g L='| less'
+if type ag &> /dev/null; then
+    alias -g G='| ag'
+else
+    alias -g G='| grep'
+fi
