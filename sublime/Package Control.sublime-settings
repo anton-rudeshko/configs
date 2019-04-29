@@ -19,8 +19,12 @@
 		"MarkdownEditing",
 		"MarkdownPreview",
 		"Material Theme",
+		"OpenVPN",
 		"Package Control",
 		"PlainTasks",
-		"Pretty JSON"
+		"Pretty JSON",
+		"TypeScript Syntax",
+		"URLEncode",
+		"Wrap Plus"
 	]
 }
