@@ -62,4 +62,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 setopt GLOB_DOTS
 setopt HIST_IGNORE_SPACE
+setopt HIST_IGNORE_ALL_DUPS
 setopt NO_HIST_VERIFY
