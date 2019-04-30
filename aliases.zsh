@@ -71,6 +71,8 @@ alias m='d -e mc'
 alias nit='npm install && npm test'
 
 alias -g L='| less'
+alias -g C='| pbcopy'
+alias -g P='| pbpaste'
 if type ag &> /dev/null; then
     alias -g G='| ag'
 else
