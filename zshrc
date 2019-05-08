@@ -5,9 +5,10 @@ dotfiles_dir="${HOME}/dotfiles"
 extra_path="${HOME}/.extra"
 [ -r ${extra_path} ] && [ -f ${extra_path} ] && source ${extra_path}
 
-if [[ `gpgconf hub` != '' ]]; then
+if type gpgconf &> /dev/null && [[ `gpgconf hub` != '' ]]; then
   export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
   export GPG_TTY=$(tty)
+  gpg-connect-agent /bye
 fi
 
 export PATH="${HOME}/bin:./node_modules/.bin:$PATH"
