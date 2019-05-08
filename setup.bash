@@ -59,7 +59,7 @@ fi
 unset vundle_dir
 
 echo "Symlinking configs..."
-for file in profile vimrc inputrc zshrc; do
+for file in profile vimrc inputrc zshrc tmux.conf; do
     ln -sf "${dotfiles_dir}/${file}" "${HOME}/.${file}"
 done
 unset file
