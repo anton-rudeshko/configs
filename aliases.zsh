@@ -72,7 +72,7 @@ alias nit='npm install && npm test'
 
 alias -g L='| less'
 alias -g C='| pbcopy'
-alias -g PF='pbpaste | fzf'
+alias -g F='| fzf'
 
 if type ag &> /dev/null; then
     alias -g G='| ag'
