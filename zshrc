@@ -62,6 +62,9 @@ setopt nocaseglob
 # create a file.
 setopt noclobber
 
+# Do not require a leading '.' in a filename to be matched explicitly.
+setopt globdots
+
 # If a pattern for filename generation has no matches, delete the pattern from
 # the argument list instead of reporting an error.
 setopt nullglob
