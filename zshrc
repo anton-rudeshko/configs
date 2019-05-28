@@ -69,6 +69,27 @@ setopt globdots
 # the argument list instead of reporting an error.
 setopt nullglob
 
+# see http://zsh.sourceforge.net/Doc/Release/Completion-System.html
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh_cache
+zstyle ':completion:*' menu select=long-list select=0
+zstyle ':completion:*' verbose yes
+
+# Enable approximate completions
+zstyle ':completion:*' completer _expand _complete _correct _approximate
+zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3)) numeric)'
+
+# Group results by category
+zstyle ':completion:*' group-name ''
+
+# Show message while waiting for completion
+zstyle ':completion:*' show-completer true
+
+# Nicer format for completion messages
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:corrections' format '%U%F{green}%d (errors: %e)%f%u'
+zstyle ':completion:*:warnings' format '%F{202}%BSorry, no matches for: %F{214}%d%b'
+
 dotfiles_dir="${HOME}/dotfiles"
 
 extra_path="${HOME}/.extra"
