@@ -76,7 +76,7 @@ fi
 export PATH="${HOME}/bin:./node_modules/.bin:$PATH"
 export ZSH_HIGHLIGHT_MAXLENGTH=300
 
-export EDITOR="subl --wait"
+export EDITOR="vim"
 export PAGER=less
 # i=--ignore-case
 # F=--quit-if-one-screen
