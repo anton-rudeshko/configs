@@ -1,7 +1,11 @@
 echo "==> Loading .zshrc"
 
+ZSH_CACHE=~/.zsh_cache
+mkdir -p ${ZSH_CACHE}
+chmod 700 ${ZSH_CACHE}
+
 # see man zshbuiltins
-autoload -U compinit && compinit
+autoload -U compinit && compinit -d "$ZSH_CACHE/zcompdump"
 
 # see man zshoptions
 
@@ -91,6 +95,8 @@ export BAT_STYLE="changes,header,numbers"
 
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
+
+export ANTIGEN_COMPDUMP="${ZSH_CACHE}/antigen_compdump"
 
 source $(brew --prefix)/share/antigen/antigen.zsh
 antigen init "${dotfiles_dir}/antigenrc"
