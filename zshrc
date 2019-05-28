@@ -1,5 +1,67 @@
 echo "==> Loading .zshrc"
 
+# see man zshbuiltins
+autoload -U compinit && compinit
+
+# see man zshoptions
+
+# If a completion is performed with the cursor within a word, and a full
+# completion is inserted, the cursor is moved to the end of the word. That is,
+# the cursor is moved to the end of the word if either a single match is
+# inserted or menu completion is performed.
+setopt alwaystoend
+
+# (-J) If a command is issued that can't be executed as a normal command, and
+# the command is the name of a directory, perform the cd command to that
+# directory.
+setopt autocd
+
+# (-N) Make cd push the old directory onto the directory stack.
+setopt autopushd
+
+# If unset, the cursor is set to the end of the word if completion is started.
+# Otherwise it stays there and completion is done from both ends.
+setopt completeinword
+
+# (-0) Try to correct the spelling of commands.
+setopt correct
+
+# Save each command's beginning timestamp (in seconds since the epoch) and the
+# duration (in seconds) to the history file.
+setopt extendedhistory
+
+# If a new command line being added to the history list duplicates an older one,
+# the older command is removed from the list (even if it is not the previous
+# event).
+setopt histignorealldups
+
+# Remove command lines from the history list when the first character on the
+# line is a space, or when one of the expanded aliases contains a leading space
+setopt histignorespace
+
+# Try to make the completion list smaller (occupying less lines) by printing the
+# matches in columns with different widths
+setopt listpacked
+
+# When listing files that are possible completions, show the type of each file
+# with a trailing identifying mark.
+setopt listtypes
+
+# Beep on error in ZLE.
+setopt nobeep
+
+# Make globbing (filename generation) sensitive to case.
+setopt nocaseglob
+
+# Allows '>' redirection to truncate existing files, and '>>' to create files.
+# Otherwise '>!' or '>|' must be used to truncate a file, and '>>!' or '>>|' to
+# create a file.
+setopt noclobber
+
+# If a pattern for filename generation has no matches, delete the pattern from
+# the argument list instead of reporting an error.
+setopt nullglob
+
 dotfiles_dir="${HOME}/dotfiles"
 
 extra_path="${HOME}/.extra"
@@ -61,7 +123,3 @@ _fzf_compgen_dir() {
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-setopt GLOB_DOTS
-setopt HIST_IGNORE_SPACE
-setopt HIST_IGNORE_ALL_DUPS
-setopt NO_HIST_VERIFY
