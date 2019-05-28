@@ -17,6 +17,12 @@ echo -n "==> Installing linuxbrew dependencies ${linuxbrew_deps}..."
 sudo apt-get install -qq ${linuxbrew_deps}
 echo " ok"
 
+# libterm-readkey-perl is required for git interactive.singleKey
+other_deps="libterm-readkey-perl"
+echo -in "==> Installing other dependencies ${other_deps}..."
+sudo apt-get install -qq ${other_deps}
+echo " ok"
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
