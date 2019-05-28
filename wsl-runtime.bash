@@ -7,7 +7,7 @@
 
 # Note: Bash on Windows does not currently apply umask properly.
 # see https://github.com/Microsoft/WSL/issues/352
-if [ "$(umask)" = "0000" ]; then
+if [[ "$(umask)" =~ "^0{3,}$" ]]; then
     umask 027
 fi
 
