@@ -11,6 +11,8 @@ antigen bundles <<EOBUNDLES
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-autosuggestions
     changyuheng/zsh-interactive-cd
+    MichaelAquilina/zsh-you-should-use
+
     lukechilds/zsh-nvm
 
     mafredri/zsh-async
