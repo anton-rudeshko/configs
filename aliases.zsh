@@ -3,6 +3,12 @@ alias gmf='git merge --ff-only'
 
 alias gcd='git checkout dev'
 
+alias gsw='git switch'
+alias gsc='git switch --create'
+alias gs-='git switch -'
+alias gsd='git switch dev'
+alias gsm='git switch master'
+
 alias gl='git lol'
 alias gh='git hist'
 

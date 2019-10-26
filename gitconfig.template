@@ -13,6 +13,9 @@
     # Shortcuts
     st = status -sb
     co = checkout
+    sw = switch
+    swc = switch -c
+    res = restore
     cob = checkout -b
     cp = cherry-pick
     ci = commit
