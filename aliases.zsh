@@ -13,7 +13,7 @@ alias gfpu='git fetch --prune upstream'
 alias grh='git reset --hard'
 
 # Reset current branch to its origin state
-alias grho='git reset --hard origin/`gbc`'
+alias grho='git reset --hard origin/$(gbc)'
 
 # Pull changes without merge
 alias gpf='git pull --ff-only'
@@ -24,9 +24,9 @@ alias gpr='git pull --rebase'
 alias gpru='git pull --rebase upstream'
 
 # Push current branch and setup upstream
-alias gpc='git push -u origin `gbc`'
+alias gpc='git push -u origin $(gbc)'
 # Force push current branch
-alias gpcf='git push -u origin +`gbc`'
+alias gpcf='git push -u origin +$(gbc)'
 
 # Cherry-picking
 alias gcp='git cherry-pick '
