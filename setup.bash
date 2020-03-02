@@ -42,6 +42,11 @@ if [[ $(uname -r) =~ Microsoft ]]; then
     source "${dotfiles_dir}/setup-wsl.bash"
 fi
 
+if [ -z "$(which fzf)" ]; then
+    echo "Configuring fzf..."
+    $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc --no-bash --no-fish
+fi
+
 vundle_dir="${HOME}/.vim/bundle/Vundle.vim"
 if [ ! -d "${vundle_dir}" ]; then
     read -p "Install vundle? " -n 1 -r
