@@ -1,6 +1,7 @@
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
+    git
     gitfast
     github
     colored-man-pages
