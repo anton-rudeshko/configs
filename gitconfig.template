@@ -27,16 +27,6 @@
     branches = branch -a
     remotes = remote -v
 
-    save = !git add --all && git commit --no-verify --message "SAVEPOINT"
-    wip = !git add --update && git commit --no-verify --message "WIP"
-    undo = reset HEAD~1 --soft
-
-    # Pretty log for current branch
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-
-    # Pretty log for all branches
-    hist = log --pretty=format:'%C(yellow)%h%C(reset) %ad | %C(75)%s%C(reset) %C(yellow)%d%C(reset) [%an]' --graph --date=short --branches --all
-
     # Get hash of latest commit
     hash = show -s --format=%H
 
