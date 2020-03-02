@@ -2,7 +2,7 @@
 
 set -e
 
-dotfiles_dir=`cd "$(dirname "$0")" && pwd`
+dotfiles_dir=$(cd "$(dirname "$0")" && pwd)
 extra_file="${HOME}/.extra"
 
 echo "Home directory is ${HOME}"
@@ -64,8 +64,8 @@ for file in profile vimrc inputrc zshrc tmux.conf; do
 done
 unset file
 
-CURRENT_GIT_USER=`git config --global --get user.name || echo`
-CURRENT_GIT_EMAIL=`git config --global --get user.email || echo`
+CURRENT_GIT_USER=$(git config --global --get user.name || echo)
+CURRENT_GIT_EMAIL=$(git config --global --get user.email || echo)
 CURRENT_GH_HOST=${GITHUB_HOST:-github.com}
 
 echo "Configuring git..."
