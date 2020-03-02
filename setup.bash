@@ -69,9 +69,9 @@ CURRENT_GIT_EMAIL=$(git config --global --get user.email || echo)
 CURRENT_GH_HOST=${GITHUB_HOST:-github.com}
 
 echo "Configuring git..."
-read -p "Enter your full name ($CURRENT_GIT_USER): " GIT_USER
-read -p "Enter your e-mail ($CURRENT_GIT_EMAIL): " GIT_EMAIL
-read -p "Enter your GitHub host ($CURRENT_GH_HOST): " GH_HOST
+read -p "Enter your full name (${CURRENT_GIT_USER}): " GIT_USER
+read -p "Enter your e-mail (${CURRENT_GIT_EMAIL}): " GIT_EMAIL
+read -p "Enter your GitHub host (${CURRENT_GH_HOST}): " GH_HOST
 
 GIT_USER=${GIT_USER:-$CURRENT_GIT_USER}
 GIT_EMAIL=${GIT_EMAIL:-$CURRENT_GIT_EMAIL}
