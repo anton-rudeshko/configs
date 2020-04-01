@@ -22,10 +22,6 @@ brew "antigen"
 # https://gnupg.org/
 brew "gnupg"
 
-# GPG key agent
-# https://www.gnupg.org/
-brew "gpg-agent"
-
 
 # CLI tool for quick access to files and directories
 # https://github.com/clvv/fasd
