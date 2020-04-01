@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>SUAutomaticallyUpdate</key>
+        <false/>
+        <key>SUHasLaunchedBefore</key>
+        <true/>
+        <key>SUSendProfileInfo</key>
+        <false/>
+        <key>SUUpdateRelaunchingMarker</key>
+        <false/>
+        <key>browsers</key>
+        <array>
+            <dict>
+                <key>path</key>
+                <string>/Applications/Google Chrome.app</string>
+                <key>type</key>
+                <string>ChoosyBrowser</string>
+            </dict>
+            <dict>
+                <key>path</key>
+                <string>/Applications/Chromium.app</string>
+                <key>type</key>
+                <string>ChoosyBrowser</string>
+            </dict>
+        </array>
+        <key>displayBrowserNames</key>
+        <false/>
+        <key>displayMenuBarItem</key>
+        <false/>
+        <key>displayURL</key>
+        <false/>
+        <key>generalMode</key>
+        <integer>0</integer>
+        <key>iconSize</key>
+        <integer>64</integer>
+        <key>launchAtLogin</key>
+        <true/>
+        <key>runningMode</key>
+        <integer>1</integer>
+    </dict>
+</plist>
