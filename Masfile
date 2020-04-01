@@ -1,6 +1,5 @@
 # Mac App Store command-line interface
 brew "mas"
 
-mas 'Pocket', id: 568494494
 mas 'Be Focused Pro', id: 961632517
 mas 'Todoist', id: 585829637
