@@ -1,34 +1,31 @@
-tap "caskroom/fonts"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 
-################
-# Core stuff
-################
+cask "iterm2-beta"
 
-# Pretty window manager
 cask "spectacle"
 cask "alfred"
 
 cask "choosy"
-cask "yandex"
+cask "chromium"
 cask "google-chrome"
 
-cask "xmind-zen"
-cask "plex-media-player"
+cask "vlc"
 cask "telegram-desktop"
+cask "keepassxc"
+
+cask "xmind-zen"
 cask "veracrypt"
 
-# Editors
 cask "sublime-text"
 cask "dynalist"
-cask "iterm2"
-cask "postman"
+cask "notion"
 cask "font-fira-code"
 cask "jetbrains-toolbox"
 
-################
-# Optional stuff
-################
+cask "google-backup-and-sync"
+cask "yandex-disk"
 
-# Automatically adjust screen color temperature
 cask "flux"
 cask "ilya-birman-typography-layout"
