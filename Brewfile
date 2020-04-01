@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 
 tap "beeftornado/rmtree"
-tap "saulpw/vd"
 
 # Clone of cat(1) with syntax highlighting and Git integration
 # https://github.com/sharkdp/bat
@@ -56,10 +55,6 @@ brew "curl"
 # https://rsync.samba.org/
 brew "rsync"
 
-# User-friendly cURL replacement (command-line HTTP client)
-# https://httpie.org/
-brew "httpie"
-
 
 # Lightweight and flexible command-line JSON processor
 # https://stedolan.github.io/jq/
@@ -67,15 +62,16 @@ brew "jq"
 
 # Make JSON greppable
 # https://github.com/tomnomnom/gron
-brew "gron"
+#brew "gron"
 
 # Tool to perform numerical, textual & statistical operations
 # https://www.gnu.org/software/datamash
-brew "datamash"
+#brew "datamash"
 
 # Terminal utility for exploring and arranging tabular data
 # https://visidata.org/
-brew "saulpw/vd/visidata"
+#tap "saulpw/vd"
+#brew "saulpw/vd/visidata"
 
 
 # Improved top (interactive process viewer)
@@ -92,15 +88,15 @@ brew "midnight-commander"
 
 # Extract, view, and test RAR archives
 # https://www.rarlab.com/
-brew "unrar"
+#brew "unrar"
 
 # Extraction utility for .zip compressed archives
 # https://infozip.sourceforge.io/UnZip.html
-brew "unzip"
+#brew "unzip"
 
 # 7-Zip (high compression file archiver) implementation
 # https://p7zip.sourceforge.io/
-brew "p7zip"
+#brew "p7zip"
 
 
 # Version control system designed to be a better CVS
@@ -117,11 +113,11 @@ brew "git-lfs"
 
 # Compute various size metrics for a Git repository
 # https://github.com/github/git-sizer
-brew "git-sizer"
+#brew "git-sizer"
 
 # Simple and efficient way to access statistics in git
 # https://github.com/arzzen/git-quick-stats
-brew "git-quick-stats"
+#brew "git-quick-stats"
 
 # Text interface for Git repositories
 # https://jonas.github.io/tig/
@@ -154,6 +150,4 @@ brew "python"
 
 # Bash completion for Pip
 # https://github.com/ekalinin/pip-bash-completion
-brew "pip-completion"
-
-# brew "lastpass-cli", args: ["with-pinentry"]
+#brew "pip-completion"
