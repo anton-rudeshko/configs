@@ -3,3 +3,4 @@
 
 *.zwc
 *.swp
+*.lock.json
