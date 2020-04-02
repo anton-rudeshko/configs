@@ -1,0 +1,7 @@
+# Interpreted, interactive, object-oriented programming language
+# https://www.python.org/
+brew "python"
+
+# Bash completion for Pip
+# https://github.com/ekalinin/pip-bash-completion
+brew "pip-completion"

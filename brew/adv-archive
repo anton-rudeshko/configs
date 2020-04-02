@@ -1,0 +1,11 @@
+# Extract, view, and test RAR archives
+# https://www.rarlab.com/
+brew "unrar"
+
+# Extraction utility for .zip compressed archives
+# https://infozip.sourceforge.io/UnZip.html
+brew "unzip"
+
+# 7-Zip (high compression file archiver) implementation
+# https://p7zip.sourceforge.io/
+brew "p7zip"

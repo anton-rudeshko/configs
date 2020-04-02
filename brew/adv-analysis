@@ -1,0 +1,14 @@
+# Make JSON greppable
+# https://github.com/tomnomnom/gron
+brew "gron"
+
+# Tool to perform numerical, textual & statistical operations
+# https://www.gnu.org/software/datamash
+brew "datamash"
+
+# Terminal utility for exploring and arranging tabular data
+# https://visidata.org/
+tap "saulpw/vd"
+brew "saulpw/vd/visidata"
+
+brew "lnav"

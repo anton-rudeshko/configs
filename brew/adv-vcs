@@ -1,0 +1,30 @@
+# Add GitHub support to git on the command-line
+# https://hub.github.com/
+brew "hub"
+
+# Text interface for Git repositories
+# https://jonas.github.io/tig/
+brew "tig"
+
+
+# Display word differences between text files
+# https://www.gnu.org/software/wdiff/
+brew "wdiff"
+
+
+# Git extension for versioning large files
+# https://github.com/git-lfs/git-lfs
+brew "git-lfs"
+
+# Compute various size metrics for a Git repository
+# https://github.com/github/git-sizer
+brew "git-sizer"
+
+# Simple and efficient way to access statistics in git
+# https://github.com/arzzen/git-quick-stats
+brew "git-quick-stats"
+
+
+# Version control system designed to be a better CVS
+# https://subversion.apache.org/
+brew "subversion"

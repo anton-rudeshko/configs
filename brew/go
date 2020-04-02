@@ -1,0 +1,3 @@
+# Open source programming language to build simple/reliable/efficient software
+# https://golang.org
+brew "go"

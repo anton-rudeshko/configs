@@ -1,0 +1,7 @@
+brew "ffmpeg"
+brew "youtube-dl"
+brew "streamlink"
+
+brew "mpv"
+
+brew "exiftool"

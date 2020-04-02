@@ -1,0 +1,4 @@
+brew "ascii"
+brew "dos2unix"
+brew "hexedit"
+brew "hexyl"
