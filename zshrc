@@ -1,5 +1,8 @@
 echo "==> Loading .zshrc"
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 ZSH_CACHE=~/.zsh_cache
 mkdir -p ${ZSH_CACHE}
 chmod 700 ${ZSH_CACHE}
@@ -126,9 +129,6 @@ source $(brew --prefix)/share/antigen/antigen.zsh
 antigen init "${dotfiles_dir}/antigenrc"
 
 HYPHEN_INSENSITIVE="true"
-
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 
 source "${dotfiles_dir}/aliases.zsh"
 
