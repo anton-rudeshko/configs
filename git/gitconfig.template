@@ -3,6 +3,7 @@
     pager = diff-so-fancy | less -$LESS
     editor = subl -n -w
     autocrlf = input
+
 [interactive]
     singleKey = true
 
@@ -10,30 +11,12 @@
     autocorrect = 1
 
 [alias]
-    # Shortcuts
-    st = status -sb
-    co = checkout
-    sw = switch
-    swc = switch -c
-    res = restore
-    cob = checkout -b
-    cp = cherry-pick
-    ci = commit
-    up = pull
-    di = diff
-    br = branch
-
     tags = tag -l
     branches = branch -a
     remotes = remote -v
 
-    # Get hash of latest commit
     hash = show -s --format=%H
-
-    # Remove branches that have already been merged with master
-    dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
     size = "!git gc && git count-objects -vH"
-
     patch = !git --no-pager diff --binary --no-color
 
 [color]
