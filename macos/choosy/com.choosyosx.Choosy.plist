@@ -3,13 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>SUAutomaticallyUpdate</key>
-        <false/>
-        <key>SUHasLaunchedBefore</key>
         <true/>
-        <key>SUSendProfileInfo</key>
-        <false/>
-        <key>SUUpdateRelaunchingMarker</key>
-        <false/>
         <key>browsers</key>
         <array>
             <dict>
