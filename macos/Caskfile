@@ -15,6 +15,8 @@ cask "vlc"
 cask "telegram-desktop"
 cask "keepassxc"
 
+cask "zoomus"
+
 cask "xmind-zen"
 cask "veracrypt"
 
