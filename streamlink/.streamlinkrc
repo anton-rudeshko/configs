@@ -1,0 +1,9 @@
+player=mpv --saturation=20 --contrast=20 --volume=150 --autofit=400 --geometry=97%:97%
+verbose-player
+player-passthrough=hls,rtmp
+
+default-stream=best
+
+twitch-disable-hosting
+twitch-disable-ads
+twitch-disable-reruns
