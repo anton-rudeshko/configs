@@ -1,0 +1,5 @@
+--output ~/Movies/youtube/%(title)s.%(id)s.%(resolution)s.%(ext)s
+--continue
+--ignore-errors
+--no-call-home
+--format bestvideo[height<=1080]+bestaudio
