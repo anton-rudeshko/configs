@@ -35,3 +35,7 @@ defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
 
 # Remove Siri from default touch bar layout
 defaults write com.apple.controlstrip MiniCustomized -array "com.apple.system.brightness" "com.apple.system.volume" "com.apple.system.mute"
+
+# Fn keys by default on strip
+defaults write com.apple.touchbar.agent PresentationModeGlobal -string functionKeys
+defaults write com.apple.touchbar.agent PresentationModeFnModes -dict-add functionKeys -string fullControlStrip
