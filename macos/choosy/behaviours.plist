@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>behaviour</key>
+            <integer>6</integer>
+            <key>behaviourArgument</key>
+            <dict>
+                <key>path</key>
+                <string>/Applications/Chromium.app</string>
+                <key>type</key>
+                <string>ChoosyBrowser</string>
+            </dict>
+            <key>enabled</key>
+            <true/>
+            <key>predicate</key>
+            <string>URL CONTAINS "yandex-team" OR URL CONTAINS "yandex" OR URL CONTAINS "nda.ya.ru"</string>
+            <key>title</key>
+            <string>Yandex</string>
+        </dict>
+    </array>
+</plist>
