@@ -30,5 +30,8 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disable text completion in touch bar
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
+
 # Remove Siri from default touch bar layout
 defaults write com.apple.controlstrip MiniCustomized -array "com.apple.system.brightness" "com.apple.system.volume" "com.apple.system.mute"
