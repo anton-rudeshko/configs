@@ -4,6 +4,9 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 # Show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string YES
 
+# Switch dark/light themes automatically
+defaults write NSGlobalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
+
 # Set sidebar icon size to small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
