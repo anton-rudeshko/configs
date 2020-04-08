@@ -85,3 +85,4 @@ brew "diff-so-fancy"
 # GNU Pretty Good Privacy (PGP) package
 # https://gnupg.org/
 #brew "gnupg"
+#brew "pinentry-mac"
