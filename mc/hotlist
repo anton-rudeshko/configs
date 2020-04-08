@@ -1,0 +1,5 @@
+ENTRY "home" URL "/Users/rudeshko"
+ENTRY "Downloads" URL "/Users/rudeshko/Downloads"
+ENTRY "Drive" URL "/Users/rudeshko/Google Drive"
+ENTRY "Music" URL "/Users/rudeshko/Music"
+ENTRY "tmp" URL "/Users/rudeshko/tmp"
