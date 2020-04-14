@@ -1,0 +1,21 @@
+shell_patterns=0
+
++ x /usr/bin/open | x /usr/local/bin/open
+o       Open file with OS handler
+        open %f
+
++ t r & f \.mp3$
+f       Extract image from mp3
+        ffmpeg -hide_banner -i %f "`basename %f .mp3`".jpg
+
++ ! t t
+@       Do something on the current file
+        CMD=%{Enter command}
+        $CMD %f
+
++ t t
+@       Do something on the tagged files
+        CMD=%{Enter command}
+        for i in %t ; do
+            $CMD "$i"
+        done
