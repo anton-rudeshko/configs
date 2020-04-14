@@ -5,6 +5,6 @@ mc_config_dir="${HOME}/.config/mc"
 
 mkdir -p "${mc_config_dir}"
 
-for file in ini hotlist panels.ini; do
+for file in ini hotlist panels.ini menu; do
     cp -f "${current_dir}/${file}" "${mc_config_dir}/${file}"
 done
