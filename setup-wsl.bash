@@ -35,7 +35,7 @@ source "${dotfiles_dir}/wsl-runtime.bash"
 EOL
 
 echo "==> Running brew doctor..."
-brew doctor
+brew doctor || true
 
 echo "==> Installing gcc..."
 brew install gcc
