@@ -79,6 +79,12 @@ alias nit='npm install && npm test'
 alias -g L='| less'
 alias -g C='| pbcopy'
 
+if type fzf &> /dev/null; then
+    alias afz='alias | fzf'
+    alias efz='env | fzf'
+    alias gfz='git config --list | fzf'
+fi
+
 if type ag &> /dev/null; then
     alias -g G='| ag'
 else
