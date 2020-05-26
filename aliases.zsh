@@ -68,11 +68,12 @@ if type hub &> /dev/null; then
     alias ghbr='git browse'
 fi
 
-# fasd
-alias e='a -e $EDITOR'
-alias v='f -e bat'
-alias o='a -e open'
-alias m='d -e mc'
+if type fasd &> /dev/null; then
+    alias e='fasd -ae $EDITOR'
+    alias v='fasd -fe bat'
+    alias o='fasd -ae open'
+    alias m='fasd -de mc'
+fi
 
 # npm
 alias nit='npm install && npm test'
