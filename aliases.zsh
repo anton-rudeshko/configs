@@ -70,6 +70,7 @@ fi
 
 # fasd
 alias e='a -e $EDITOR'
+alias v='f -e bat'
 alias o='a -e open'
 alias m='d -e mc'
 
