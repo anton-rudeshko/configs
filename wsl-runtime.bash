@@ -12,5 +12,7 @@ if [[ "$(umask)" =~ "^0{3,}$" ]]; then
 fi
 
 alias open="explorer.exe"
+alias pbpaste='powershell.exe -command "Get-Clipboard"'
+alias pbcopy='clip.exe'
 
 export BROWSER="explorer.exe"
