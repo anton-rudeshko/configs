@@ -75,7 +75,6 @@ if type fasd &> /dev/null; then
     alias m='fasd -de mc'
 fi
 
-# npm
 alias nit='npm install && npm test'
 
 alias -g L='| less'
