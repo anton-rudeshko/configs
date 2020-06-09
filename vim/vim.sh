@@ -16,4 +16,4 @@ if [ -d "${vundle_dir}" ]; then
 fi
 
 echo "vim: symlinking vimrc..."
-ln -sf "${dotfiles_dir}/vimrc" "${HOME}/.vimrc"
+ln -sf "${dotfiles_dir}/vim/vimrc" "${HOME}/.vimrc"
