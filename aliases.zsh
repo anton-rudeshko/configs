@@ -91,3 +91,11 @@ if type ag &> /dev/null; then
 else
     alias -g G='| grep'
 fi
+
+if type mdcat &> /dev/null; then
+    mdcatless() {
+        mdcat $1 | less -r
+    }
+
+    alias -s md=mdcatless
+fi
