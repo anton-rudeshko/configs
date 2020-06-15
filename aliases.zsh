@@ -55,13 +55,6 @@ alias gsd='git show -s --format="%ci"' # git-show-date
 alias gudc='gcd && gpf && gco - && grbd'
 alias gumc='gcm && gpf && gco - && grbm'
 
-# git-svn aliases
-alias gog='go git-svn'
-alias gsr='git svn rebase'
-alias gsrb='git rebase git-svn'
-alias gugc='gog && gsr && go - && gsrb'
-alias gsc='git svn dcommit'
-
 # defunkt hub alias
 if type hub &> /dev/null; then
     alias git='hub'
