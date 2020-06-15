@@ -8,6 +8,10 @@ o       Open file with OS handler
 f       Extract image from mp3
         ffmpeg -hide_banner -i %f "`basename %f .mp3`".jpg
 
++ x /usr/local/bin/subl
+s       Open with Sublime Text
+        subl -n %f
+
 + ! t t
 @       Do something on the current file
         CMD=%{Enter command}
