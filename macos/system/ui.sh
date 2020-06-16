@@ -68,3 +68,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 
 # Remove annoying notification about 'Start using iCloud'
 defaults delete com.apple.systempreferences AttentionPrefBundleIDs
+
+# Disable fullscreen swipe and mission control animations
+sudo defaults write com.apple.universalaccess reduceMotion -bool true
