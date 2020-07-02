@@ -132,7 +132,7 @@ HYPHEN_INSENSITIVE="true"
 
 source "${dotfiles_dir}/aliases.zsh"
 
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git --exclude node_modules'
 export FZF_DEFAULT_OPTS='--height 75% --multi'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
