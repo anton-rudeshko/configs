@@ -18,6 +18,8 @@ antigen bundles <<EOBUNDLES
 
     mafredri/zsh-async
     sindresorhus/pure@main
+
+    anton-rudeshko/zsh-arc
 EOBUNDLES
 
 antigen apply
