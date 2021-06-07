@@ -17,7 +17,7 @@ antigen bundles <<EOBUNDLES
     lukechilds/zsh-nvm
 
     mafredri/zsh-async
-    sindresorhus/pure
+    sindresorhus/pure@main
 EOBUNDLES
 
 antigen apply
