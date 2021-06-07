@@ -123,6 +123,8 @@ export BAT_STYLE="changes,header,numbers"
 export NVM_DIR="${HOME}/.nvm"
 export NVM_LAZY_LOAD=true
 
+source "${dotfiles_dir}/macos/iterm/shell_integration.zsh"
+
 export ANTIGEN_COMPDUMP="${ZSH_CACHE}/antigen_compdump"
 
 source $(brew --prefix)/share/antigen/antigen.zsh
@@ -150,6 +152,3 @@ _fzf_compgen_dir() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source "${dotfiles_dir}/macos/iterm/shell_integration.zsh"
-
