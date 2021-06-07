@@ -70,6 +70,10 @@ fi
 
 alias nit='npm install && npm test'
 
+if type textutil &> /dev/null; then
+    alias pbcopy-rtf='textutil -stdin -format html -convert rtf -stdout | pbcopy'
+fi
+
 alias -g L='| less'
 alias -g C='| pbcopy'
 
